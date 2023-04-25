@@ -1,0 +1,30 @@
+@import './colors'; 
+@import './general';
+
+// The design and size of the nav bar 
+.navbar {
+    height: 80px;
+    width: 100vw;
+    background-color: $main-color;
+    margin: 0px;
+    padding: 0px;
+    @include flex-nav;
+
+    // The design of the links in the navbar
+    a {
+        text-decoration: none;
+        color: $Dark;
+        font-size: 18px;
+        border: 1px solid $Dark;
+        border-bottom: 3px solid $Dark;
+        margin: 0px;
+        padding-top: 25px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+// The hover effect call to action
+.Hover {
+    @include hover-mod;
+}

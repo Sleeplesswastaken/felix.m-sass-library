@@ -1,0 +1,47 @@
+@import './colors'; 
+
+// Flexen till navbaren
+@mixin flex-nav {
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+//  Grid layouten till containarna
+@mixin Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+// Star screenens flex layout
+@mixin Start-screen{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+// Layouten av flexen till Footern.
+@mixin footer-screen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+ // Skapar hover classer till navbaren och gör så dom får olika förger, istället för att ksriva ut dom en efter en.
+@mixin hover-mod{
+    @each $name, $hex in $hover-colors{
+        &-#{"" + $name}:hover {
+            background-color: $hex;
+            transition: 0.5s;
+        }
+    }
+}

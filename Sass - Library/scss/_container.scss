@@ -1,0 +1,60 @@
+@import './colors'; 
+@import './general';
+@import './text';
+
+// containernas size and decorations
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: $Light;
+    @include Grid;
+    padding-left: 100px;
+    
+    // the size on the starting page due to it having a navbar so it nedded to be shorter
+    &__intro{
+        height: 90vh;
+        width: 100vw;
+        @include Start-screen;
+        // so that the p element from text.scss padding right 100px doesn't effect the text
+        p {
+            padding: 0%;
+        }
+    }
+}
+
+// layout, color and decorations on the Footer
+footer {
+    height: 20vh;
+    width: 100vw;
+    @include footer-screen;
+    background-color: $main-color;
+    color: $Light;
+    border-top: solid 3px $Dark ;
+    
+    // Decoration to the links in the fotter due to i being diffrent from the navbar and it affecting all links
+    a {
+        color: $Link;
+        text-decoration: underline;
+    }
+}
+
+// the decoration and color on the button and it's hover effect
+button {
+    padding: 3px 8px;
+    background-color: $main-color;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $Start;
+        transition: all 0.5s;
+    }
+}
+
+// To change the top buttons color, size and decorations from the other links in navbar
+.top {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    color: $Light;
+    font-size: 12px;
+}

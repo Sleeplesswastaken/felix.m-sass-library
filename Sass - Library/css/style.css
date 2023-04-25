@@ -1,0 +1,164 @@
+h1 {
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+p {
+  font-size: 18px;
+  padding-right: 100px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding-left: 100px;
+}
+.container__intro {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+.container__intro p {
+  padding: 0%;
+}
+
+footer {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  background-color: #34495E;
+  color: #ffffff;
+  border-top: solid 3px #000000;
+}
+footer a {
+  color: #91D7EE;
+  text-decoration: underline;
+}
+
+button {
+  padding: 3px 8px;
+  background-color: #34495E;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #283747;
+  transition: all 0.5s;
+}
+
+.top {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+p {
+  font-size: 18px;
+  padding-right: 100px;
+}
+
+.navbar {
+  height: 80px;
+  width: 100vw;
+  background-color: #34495E;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+.navbar a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  border: 1px solid #000000;
+  border-bottom: 3px solid #000000;
+  margin: 0px;
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.Hover-Start:hover {
+  background-color: #283747;
+  transition: 0.5s;
+}
+.Hover-Australien:hover {
+  background-color: #cc9911;
+  transition: 0.5s;
+}
+.Hover-Drake:hover {
+  background-color: #08B07c;
+  transition: 0.5s;
+}
+.Hover-Burlywood:hover {
+  background-color: #deb887;
+  transition: 0.5s;
+}
+.Hover-Falu:hover {
+  background-color: #801818;
+  transition: 0.5s;
+}
+.Hover-Labrador:hover {
+  background-color: #fffef2;
+  transition: 0.5s;
+}
+.Hover-Mikado:hover {
+  background-color: #ffc40c;
+  transition: 0.5s;
+}
+.Hover-Zaffre:hover {
+  background-color: #0014a8;
+  transition: 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+img {
+  max-width: 50vw;
+  max-height: 100vh;
+}/*# sourceMappingURL=style.css.map */
